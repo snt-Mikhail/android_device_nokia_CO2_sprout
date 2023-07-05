@@ -36,7 +36,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
 
 # Add fingerprint from Stock ROM build.prop
-PRODUCT_BUILD_PROP_OVERRIDES += \
+# PRODUCT_BUILD_PROP_OVERRIDES += \
     # These lines are from my device. You MUST Replace yours.
-    BUILD_FINGERPRINT= Nokia/Core2_00WW/CO2_sprout:10/QP1A.190711.020/00WW_4_200:user/release-keys  \
-    PRIVATE_BUILD_DESC= Core2_00WW-user 10 QP1A.190711.020 00WW_4_200 release-keys
+    # BUILD_FINGERPRINT= Nokia/Core2_00WW/CO2_sprout:10/QP1A.190711.020/00WW_4_200:user/release-keys  \
+    # PRIVATE_BUILD_DESC= Core2_00WW-user 10 QP1A.190711.020 00WW_4_200 release-keys
