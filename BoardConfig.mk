@@ -80,7 +80,7 @@ TW_USE_TOOLBOX := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Set FSTAB
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
+# TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
 
 # Architecture
 TARGET_BOARD_SUFFIX := _64
