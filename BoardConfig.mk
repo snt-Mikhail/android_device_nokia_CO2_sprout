@@ -8,8 +8,8 @@ TARGET_BOARD_PLATFORM := mt6750
 TARGET_BOOTLOADER_BOARD_NAME := CO2_sprout
 
 # These two are for MTK Chipsets only
-BOARD_USES_MTK_HARDWARE := true
-BOARD_HAS_MTK_HARDWARE := true
+# BOARD_USES_MTK_HARDWARE := true
+# BOARD_HAS_MTK_HARDWARE := true
 
 # Recovery
 # File systems
