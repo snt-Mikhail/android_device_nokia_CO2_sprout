@@ -8,8 +8,8 @@ TARGET_BOARD_PLATFORM := mt6750
 TARGET_BOOTLOADER_BOARD_NAME := CO2_sprout
 
 # These two are for MTK Chipsets only
-# BOARD_USES_MTK_HARDWARE := true
-# BOARD_HAS_MTK_HARDWARE := true
+BOARD_USES_MTK_HARDWARE := true
+BOARD_HAS_MTK_HARDWARE := true
 
 # Recovery
 # File systems
@@ -72,9 +72,14 @@ TW_INCLUDE_FUSE_EXFAT := true                 # Include Fuse-ExFAT Filesystem Su
 TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
 TW_INCLUDE_FB2PNG := true                     # Include Screenshot Support
 TW_DEFAULT_LANGUAGE := ru                     # Set Default Language 
-TW_EXTRA_LANGUAGES := false
+TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_USE_TOOLBOX := true
+TARGET_USES_MKE2FS := true
+TW_NO_LEGACY_PROPS := true
+TW_USE_NEW_MINADBD := true
+TW_NO_BIND_SYSTEM := true
+
 
 # No recovery partition
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -94,7 +99,6 @@ TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
-# TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
-# TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
-# TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
-
+TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
+TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
+TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
