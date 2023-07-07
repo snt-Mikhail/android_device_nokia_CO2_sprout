@@ -25,7 +25,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # BOARD_RECOVERY_SWIPE := true
 # BOARD_USES_MMCUTILS := true
 # BOARD_SUPPRESS_EMMC_WIPE := true
-# BOARD_CHARGER_SHOW_PERCENTAGE := true
+BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := CO2_sprout
@@ -63,7 +63,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := fasle
 
 # TWRP stuff
 # TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
-# TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
+TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi                     # Set the exact theme you wanna use. If resulation doesn't match, define the height/width
@@ -112,6 +112,6 @@ TARGET_CPU_VARIANT := cortex-a53
 # TARGET_2ND_CPU_ABI := armeabi-v7a
 # TARGET_2ND_CPU_ABI2 := armeabi
 # TARGET_2ND_CPU_VARIANT := cortex-a53
-# TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
-# TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
-# TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
+TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
+TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
+TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
