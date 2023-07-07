@@ -21,9 +21,9 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
-# BOARD_SUPPRESS_SECURE_ERASE := true
+BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_RECOVERY_SWIPE := true
-# BOARD_USES_MMCUTILS := true
+BOARD_USES_MMCUTILS := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 
@@ -53,7 +53,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := fasle
 
 # TWRP stuff
 TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
-TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
+# TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi                     # Set the exact theme you wanna use. If resulation doesn't match, define the height/width
