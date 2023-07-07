@@ -62,7 +62,7 @@ TARGET_KERNEL_CONFIG := CO2_defconfig
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := fasle
 
 # TWRP stuff
-# TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
+TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
 TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := true
@@ -110,8 +110,8 @@ TARGET_CPU_VARIANT := cortex-a53
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
-# TARGET_2ND_CPU_ABI2 := armeabi
-# TARGET_2ND_CPU_VARIANT := cortex-a53
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
 TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
 TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
