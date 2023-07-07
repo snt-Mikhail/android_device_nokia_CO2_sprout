@@ -5,11 +5,11 @@ ALLOW_MISSING_DEPENDENCIES := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6750
-# TARGET_BOOTLOADER_BOARD_NAME := CO2_sprout
+TARGET_BOOTLOADER_BOARD_NAME := CO2_sprout
 
 # These two are for MTK Chipsets only
-# BOARD_USES_MTK_HARDWARE := true
-# BOARD_HAS_MTK_HARDWARE := true
+BOARD_USES_MTK_HARDWARE := true
+BOARD_HAS_MTK_HARDWARE := true
 
 # Recovery
 # File systems
@@ -67,21 +67,21 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := fasle
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi                     # Set the exact theme you wanna use. If resulation doesn't match, define the height/width
-# DEVICE_RESOLUTION := 1080x2160
-# TARGET_SCREEN_HEIGHT := 2160                  # The height
-# TARGET_SCREEN_WIDTH := 1080                   # The width
+DEVICE_RESOLUTION := 1080x2160
+TARGET_SCREEN_HEIGHT := 2160                  # The height
+TARGET_SCREEN_WIDTH := 1080                   # The width
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 # TW_SECONDARY_BRIGHTNESS_PATH := "/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"
 # TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file"
 # TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
-# TW_MAX_BRIGHTNESS := 255
+TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 50
 TW_INCLUDE_NTFS_3G := true                    # Include NTFS Filesystem Support
-# TW_INCLUDE_FUSE_EXFAT := true                 # Include Fuse-ExFAT Filesystem Support
-# TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
-# TW_INCLUDE_FB2PNG := true                     # Include Screenshot Support
-# TW_DEFAULT_LANGUAGE := ru                     # Set Default Language 
+TW_INCLUDE_FUSE_EXFAT := true                 # Include Fuse-ExFAT Filesystem Support
+TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
+TW_INCLUDE_FB2PNG := true                     # Include Screenshot Support
+TW_DEFAULT_LANGUAGE := ru                     # Set Default Language 
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_USE_TOOLBOX := true
@@ -97,7 +97,7 @@ RECOVERY_SDCARD_ON_DATA := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Set FSTAB
-# TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
 
 # Architecture
 TARGET_BOARD_SUFFIX := _64
