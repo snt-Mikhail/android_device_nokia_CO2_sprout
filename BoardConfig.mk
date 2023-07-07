@@ -5,11 +5,11 @@ ALLOW_MISSING_DEPENDENCIES := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6750
-TARGET_BOOTLOADER_BOARD_NAME := CO2_sprout
+# TARGET_BOOTLOADER_BOARD_NAME := CO2_sprout
 
 # These two are for MTK Chipsets only
-BOARD_USES_MTK_HARDWARE := true
-BOARD_HAS_MTK_HARDWARE := true
+# BOARD_USES_MTK_HARDWARE := true
+# BOARD_HAS_MTK_HARDWARE := true
 
 # Recovery
 # File systems
@@ -21,11 +21,11 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
-BOARD_SUPPRESS_SECURE_ERASE := true
-BOARD_RECOVERY_SWIPE := true
-BOARD_USES_MMCUTILS := true
-BOARD_SUPPRESS_EMMC_WIPE := true
-BOARD_CHARGER_SHOW_PERCENTAGE := true
+# BOARD_SUPPRESS_SECURE_ERASE := true
+# BOARD_RECOVERY_SWIPE := true
+# BOARD_USES_MMCUTILS := true
+# BOARD_SUPPRESS_EMMC_WIPE := true
+# BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user veritykeyid=id:8f56f02c61394639f13af4e8cfe02d087e41b936
@@ -52,7 +52,7 @@ TARGET_KERNEL_CONFIG := CO2_defconfig
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := fasle
 
 # TWRP stuff
-TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
+# TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
 # TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 TW_SCREEN_BLANK_ON_BOOT := true
@@ -68,10 +68,10 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_stora
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 50
 TW_INCLUDE_NTFS_3G := true                    # Include NTFS Filesystem Support
-TW_INCLUDE_FUSE_EXFAT := true                 # Include Fuse-ExFAT Filesystem Support
-TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
-TW_INCLUDE_FB2PNG := true                     # Include Screenshot Support
-TW_DEFAULT_LANGUAGE := ru                     # Set Default Language 
+# TW_INCLUDE_FUSE_EXFAT := true                 # Include Fuse-ExFAT Filesystem Support
+# TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
+# TW_INCLUDE_FB2PNG := true                     # Include Screenshot Support
+# TW_DEFAULT_LANGUAGE := ru                     # Set Default Language 
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_USE_TOOLBOX := true
