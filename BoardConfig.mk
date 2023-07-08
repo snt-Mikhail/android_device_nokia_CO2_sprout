@@ -77,6 +77,7 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 # TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 50
+TW_NO_FASTBOOT_BOOT := true
 TW_INCLUDE_NTFS_3G := true                    # Include NTFS Filesystem Support
 TW_INCLUDE_FUSE_EXFAT := true                 # Include Fuse-ExFAT Filesystem Support
 TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
