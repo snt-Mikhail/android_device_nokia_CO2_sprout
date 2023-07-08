@@ -1,6 +1,6 @@
 # mount point       	fstype    		device                                                                flags
-/                        ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system						             flags=display="System";backup=1;flashimg=1;verify=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata;slotselect
-/vendor                  ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/vendor       					     flags=display="Vendor";backup=1;flashimg=1;verify=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata;slotselect
+/                        ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system						             flags=display="System";backup=1;flashimg=1;wipeingui;verify=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata;slotselect
+/vendor                  ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/vendor       					     flags=display="Vendor";backup=1;flashimg=1;wipeingui;slotselect
 /data                    ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata						     flags=display="Data";backup=1;forceencrypt=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata
 /protect_f  		 ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect1     flags=display="Protect_f";backup=1
 /protect_s 		 ext4     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/protect2     flags=display="Protect_s";backup=1
@@ -20,11 +20,9 @@
 /boot                    emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot         flags=display="Boot";backup=1;flashimg=1;slotselect
 
 /expand			 ext4     /dev/block/dm-3						     flags=display="DataExpSD";storage;wipeingui;removable;settingsstorage;backup=0;encryptable=userdata
-/external_sd		 auto	  /data/media							     flags=display="SDCard";storage;wipeingui;removable;settingsstorage;backup=0;encryptable=userdata
-/usbotg       		 auto     /dev/block/sda1                                              	     flags=display="USB-OTG";backup=0;wipeingui;storage;removable
 
-auto          		 auto     /devices/mtk-msdc.0/11240000.msdc1*                                voldmanaged=sdcard1:auto;noemulatedsd;encryptable=userdata
-auto          		 auto     /devices/soc/11270000.usb3_xhci*                                   voldmanaged=usbotg:auto
+auto          		 auto     /devices/mtk-msdc.0/11240000.msdc1                                voldmanaged=sdcard1:auto;noemulatedsd;encryptable=userdata
+auto          		 auto     /devices/soc/11270000.usb3_xhci                                   voldmanaged=usbotg:auto
 
 /md1img			 emmc	  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md1img	     flags=display="Md1img"
 /md1dsp			 emmc	  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md1dsp	     flags=display="Md1dsp"
