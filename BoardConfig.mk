@@ -77,7 +77,7 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 # TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 # TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 50
-# TW_NO_FASTBOOT_BOOT := true
+TW_NO_FASTBOOT_BOOT := true
 TW_INCLUDE_NTFS_3G := true                    # Include NTFS Filesystem Support
 TW_INCLUDE_FUSE_EXFAT := true                 # Include Fuse-ExFAT Filesystem Support
 TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
@@ -92,7 +92,7 @@ TARGET_USES_MKE2FS := true
 TW_NO_LEGACY_PROPS := true
 TW_USE_NEW_MINADBD := true
 TW_NO_BIND_SYSTEM := true
-RECOVERY_SDCARD_ON_DATA := true
+# RECOVERY_SDCARD_ON_DATA := true
 
 # No recovery partition
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -115,6 +115,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
-# TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
-# TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
-# TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
+TARGET_CPU_ABI_LIST_64_BIT := $(TARGET_CPU_ABI)
+TARGET_CPU_ABI_LIST_32_BIT := $(TARGET_2ND_CPU_ABI),$(TARGET_2ND_CPU_ABI2)
+TARGET_CPU_ABI_LIST := $(TARGET_CPU_ABI_LIST_64_BIT),$(TARGET_CPU_ABI_LIST_32_BIT)
