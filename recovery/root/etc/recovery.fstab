@@ -19,8 +19,8 @@
 /bootloader              emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/lk           flags=display="Bootloader";backup=1;flashimg=1;slotselect
 /boot                    emmc     /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot         flags=display="Boot";backup=1;flashimg=1;slotselect
 
-auto          		 auto     /devices/mtk-msdc.0/11240000.msdc1                               flags=display="SDcard";noemulatedsd;encryptable=userdata
-auto          		 auto     /devices/soc/11270000.usb3_xhci                                   flags=display="Boot"
+auto            auto     /devices/mtk-msdc.0/11240000.msdc1*                                flags=display=auto
+auto            auto     /devices/soc/11270000.usb3_xhci*                                   flags=display=auto
 
 /md1img			 emmc	  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md1img	     flags=display="Md1img"
 /md1dsp			 emmc	  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/md1dsp	     flags=display="Md1dsp"
