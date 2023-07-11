@@ -8,8 +8,8 @@ TARGET_BOARD_PLATFORM := mt6750
 TARGET_BOOTLOADER_BOARD_NAME := CO2_sprout
 
 # These two are for MTK Chipsets only
-BOARD_USES_MTK_HARDWARE := true
-BOARD_HAS_MTK_HARDWARE := true
+# BOARD_USES_MTK_HARDWARE := true
+# BOARD_HAS_MTK_HARDWARE := true
 
 # Recovery
 # File systems
@@ -77,7 +77,7 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 # TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 50
-TW_NO_FASTBOOT_BOOT := true
+# TW_NO_FASTBOOT_BOOT := true
 TW_INCLUDE_NTFS_3G := true                    # Include NTFS Filesystem Support
 TW_INCLUDE_FUSE_EXFAT := true                 # Include Fuse-ExFAT Filesystem Support
 TWRP_INCLUDE_LOGCAT := true                   # Include LogCat Binary
@@ -86,13 +86,13 @@ TW_DEFAULT_LANGUAGE := ru                     # Set Default Language
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_USE_TOOLBOX := true
-TW_EXCLUDE_DEFAULT_USB_INIT := true
+# TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_INCLUDE_RESETPROP := true
 TARGET_USES_MKE2FS := true
 TW_NO_LEGACY_PROPS := true
-TW_USE_NEW_MINADBD := true
-TW_NO_BIND_SYSTEM := true
-RECOVERY_SDCARD_ON_DATA := true
+# TW_USE_NEW_MINADBD := true
+# TW_NO_BIND_SYSTEM := true
+# RECOVERY_SDCARD_ON_DATA := true
 
 # No recovery partition
 BOARD_USES_RECOVERY_AS_BOOT := true
@@ -107,7 +107,7 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a53
+TARGET_CPU_VARIANT := generic
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
