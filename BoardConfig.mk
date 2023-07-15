@@ -11,6 +11,13 @@ TARGET_BOOTLOADER_BOARD_NAME := CO2_sprout
 BOARD_USES_MTK_HARDWARE := true
 BOARD_HAS_MTK_HARDWARE := true
 
+# Encryption
+TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
+
 # Recovery
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -63,7 +70,6 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := fasle
 
 # TWRP stuff
 TW_EXCLUDE_SUPERSU := false                   # true/false: Add SuperSU or not
-TW_INCLUDE_CRYPTO := true                     # true/false: Add Data Encryption Support or not
 TW_INPUT_BLACKLIST := "hbtp_vm"               # Optional: Disables virtual mouse
 # TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi                     # Set the exact theme you wanna use. If resulation doesn't match, define the height/width
